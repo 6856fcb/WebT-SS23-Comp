@@ -75,6 +75,7 @@ const model = new Model();
 
 /* Task 1 - Part 2. Replace these three instances of the example Class Resource with instances
    of your own class */
-model.add(new Jump("H43-Mil_Edition (1952)", 3000, true, "12.06.2023", "Rip Fracture"));
-
+model.add(new Jump("CSB - PD SABRE3", 3000, false, "12.06.2023));
+model.add(new Jump("Aerodyne Zulu 112sqft", 3000, true, "01.06.2023", "Rip Fracture"));
+model.add(new Jump("Aerodyne Zulu 112sqft", 3000, false, "5.05.2023", "Main Cutoff"));
 module.exports = model;
