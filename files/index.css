@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    color: white;
+    margin: 0;
+    font-family: 'Arial';
+    background-image: url('bg-parachute.jpg');
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Grid layout */
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "h"
+    "c"
+    "f";
+
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: 1.75;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.87);
+    padding: 6px 16px;
+    font-size: 0.875rem;
+    min-width: 64px;
+    box-sizing: border-box;
+    transition: background-color 0.2s;
+    background-color: #E0E0E0; /* default color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b4b4b4; /* color when hovered */
+}
+
+button:active {
+    background-color: #AAAAAA; /* color when clicked */
+}
+
+#create {
+    margin-bottom: 5px;
+}
+
+/* CSS Box configurations on mobile devices to safe space */ 
+
+h2 {
+    margin: 0px;
+}
+
+
+/* HEADER */
+
+header {
+    padding: 0.5em 0 0 0;
+    grid-area: h;
+    text-align: left;
+    background-color: #5f869a;
+}
+
+
+
+header > img {
+    width: 2em;
+    height: 2em;
+}
+
+header > h1 {
+    display: inline;
+}
+
+@media (min-width: 642px) {
+    header {
+        padding: 1em;
+    }
+}
+
+/* Link Styling, Hovering */
+a {
+    color: black;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* MAIN: Handle overflow! */
+main {
+    grid-area: c;
+    overflow-y: auto;
+    padding: 8px;    
+}
+
+main img {
+    width: 50%;
+}
+
+article, form {
+    padding: 4px;
+    margin: 2px;
+    background-color: #0c4f7042;
+    border-radius: 6px;
+}
+
+article:hover, form:hover {
+    background-color: #0c4f7094;
+}
+
+article > button, form > button {
+    margin: 2px 2px;
+}
+
+form > label {
+    margin-right: 6px;
+}
+
+/* FOOTER */
+footer {
+    grid-area: f;
+    text-align: center;
+    background-color: #4894baab;
+    padding: 8px;
+}
+
+@media (max-width: 642px) {
+    footer {
+        font-size: 12px;
+    }
+}
