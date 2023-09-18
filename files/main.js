@@ -137,7 +137,7 @@ function edit(resource) {
         .append(new ElementCreator("label").text("Jump Date").with("for", "resource-jumpDate"))
         .append(new ElementCreator("input").id("resource-jumpDate").with("type", "date").with("value", resource.jumpDate))
         .append(new ElementCreator("label").text("Notes").with("for", "resource-notes"))
-        .append(new ElementCreator("textarea").id("resource-notes").text(resource.notes));
+        .append(new ElementCreator("input").id("resource-notes").text(resource.notes));
 
     formCreator
         .append(new ElementCreator("button").text("Speichern").listener('click', (event) => {
@@ -180,7 +180,7 @@ function remove(resource) {
             .append(new ElementCreator("label").text("Jump Date").with("for", "resource-jumpDate"))
             .append(new ElementCreator("input").id("resource-jumpDate").with("type", "date"))
             .append(new ElementCreator("label").text("Notes").with("for", "resource-notes"))
-            .append(new ElementCreator("textarea").id("resource-notes"));
+            .append(new ElementCreator("input").id("resource-notes"));
     
         formCreator
         .append(new ElementCreator("button").text("Create").listener('click', (event) => {
