@@ -112,7 +112,7 @@ article, form {
     border-radius: 6px;
 }
 
-article > label {
+form > input {
     margin-right: 4px;
     padding: 2px;
 }
