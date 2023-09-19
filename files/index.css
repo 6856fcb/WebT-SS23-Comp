@@ -112,6 +112,11 @@ article, form {
     border-radius: 6px;
 }
 
+article > label {
+    margin-right: 4px;
+    padding: 2px;
+}
+
 article:hover, form:hover {
     background-color: #0c4f7094;
 }
